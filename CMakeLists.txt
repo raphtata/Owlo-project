@@ -13,7 +13,9 @@ add_executable(owloApp
     HeatmapWidget.cpp
     FrameProvider.cpp
     HeatmapWidget.h
+    qcustomplot.cpp
     FrameProvider.h
+    qcustomplot.h
 )
 
 target_link_libraries(owloApp PRIVATE Qt6::Widgets)
