@@ -6,16 +6,18 @@ set(CMAKE_AUTOMOC ON)   # Active la génération automatique des moc_*.cpp
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets PrintSupport)
 
 add_executable(owloApp
-    main.cpp
-    HeatmapWidget.cpp
     FrameProvider.cpp
-    HeatmapWidget.h
+    HeatmapWidget.cpp
+    main.cpp
+    ProfileWidget.cpp
     qcustomplot.cpp
     FrameProvider.h
+    HeatmapWidget.h
+    ProfileWidget.cpp
     qcustomplot.h
 )
 
-target_link_libraries(owloApp PRIVATE Qt6::Widgets)
+target_link_libraries(owloApp PRIVATE Qt6::Widgets Qt6::PrintSupport)

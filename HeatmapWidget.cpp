@@ -33,6 +33,7 @@ void HeatmapWidget::updateFrame() {
         }
     }
     // appel de la methode paintEvent
+    emit newFrame(m_currentFrame);
     update(); 
 }
 

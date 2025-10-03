@@ -7,7 +7,8 @@
 
 class HeatmapWidget : public QWidget {
     Q_OBJECT
-
+signals:
+    void newFrame(const std::vector<std::vector<double>> &frame);
 public:
     explicit HeatmapWidget(FrameProvider* provider, QWidget* parent = nullptr);
 
