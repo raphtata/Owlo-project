@@ -15,15 +15,7 @@ docker build -t owlo-debug .
 ▶️ Utilisation
 🔹 Sous Windows
 
-Lancer VcXsrv (XLaunch) avec les options suivantes :
-
-Multiple windows
-
-Display number = 0
-
-Disable access control ✅
-
-Native OpenGL ❌ décoché
+Lancer VcXsrv (XLaunch).
 
 Exécuter le conteneur :
 

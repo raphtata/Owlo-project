@@ -32,8 +32,9 @@ void HeatmapWidget::updateFrame() {
             m_maxVal = std::max(m_maxVal, val);
         }
     }
-    // appel de la methode paintEvent
+    // emet la frame permettant de mettre à jour les graph de moyenne en X et Y
     emit newFrame(m_currentFrame);
+    // appel de la methode paintEvent
     update(); 
 }
 
