@@ -1,6 +1,6 @@
 📊 owloApp – Qt Heatmap Viewer
 
-Ce projet affiche en temps réel une heatmap générée avec Qt6.
+Ce projet affiche en temps réel une heatmap générée avec Qt6 et deux courbes correspondant aux moyennes en X et Y en temps réél.
 Il est packagé dans un conteneur Docker afin d’être facilement reproductible et portable.
 
 ⚙️ Prérequis
@@ -56,7 +56,5 @@ docker run -it --rm \
 🛠️ Développement
 
 Le projet est compilé avec CMake et Qt6
-
-Le binaire est généré dans /app/build/owloApp dans le conteneur
 
 Le code est structuré pour faciliter l’ajout de nouvelles visualisations
